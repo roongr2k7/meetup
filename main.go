@@ -23,5 +23,5 @@ func pongV1(c *gin.Context) {
 }
 
 func pongV2(c *gin.Context) {
-	c.String(200, "pongpong")
+	c.JSON(200, map[string]string{"response": "pongpong"})
 }
